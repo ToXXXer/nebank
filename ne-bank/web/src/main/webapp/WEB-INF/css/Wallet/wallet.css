@@ -1,0 +1,178 @@
+/*Общие настройки*/
+
+* {
+    background-color: #F7F9F9;
+    margin: 0%;
+}
+
+header {
+    height: 20%;
+}
+
+section {
+    height: 70%;
+}
+
+footer {
+    height: 10%;
+    background-color: #c8c8c8;
+}
+
+/*Header*/
+
+/*Upper*/
+
+div.head-upper, head-lower {
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.head-upper {
+    height: 40%;
+}
+
+div.head-lower {
+    height: 60%;
+}
+
+img.logo {
+    height: 100%;
+    margin-left: 10%;
+}
+
+.dropdown {
+    height: 80%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    margin-top: 10%;
+    border-radius: 10%;
+    background-color: #FF6B01;
+    color:  #c8c8c8;
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color:  #c8c8c8;
+    min-width: 300px;
+    box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #353535;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 16) + 16px);
+    padding: 16px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FF6B01;
+}
+
+/*Lower*/
+
+div.head-lower {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1%;
+}
+
+button {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 24) + 24px);
+    background-color: #FF6B01;
+    color: #353535;
+}
+
+div.head-lower-name {
+    color: #353535;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (48 - 32) + 32px);
+}
+
+div.operation {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Section*/
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1%;
+}
+
+div.wallet-info {
+    display: flex;
+    flex-direction: column;
+}
+
+div.name {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 24) + 24px);
+    color: #FF6B01;
+    font-style: oblique;
+}
+
+div.value {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 24) + 24px);
+    color: #353535;
+    word-wrap:break-word
+}
+
+div.wallet-history {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    color: #353535;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (24 - 16) + 16px);
+}
+
+div.transaction {
+    border-color: #FF6B01;
+    border-width: 5px;
+    border-style: solid;
+}
+/*Footer*/
+
+div.footer {
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+span.footer-grey {
+    height: 100%;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (24 - 24) + 24px);
+    background-color: #f1f1f1;
+    color: #353535;
+}
+
+span.footer-orange {
+    height: 100%;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (24 - 24) + 24px);
+    background-color: #f1f1f1;
+    color: #FF6B01;
+}
+
+a {
+    text-decoration: none;
+}

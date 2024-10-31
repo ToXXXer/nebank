@@ -1,0 +1,171 @@
+/*Общие настройки*/
+
+* {
+    background-color: #F7F9F9;
+    margin: 0%;
+}
+
+header {
+    height: 20%;
+}
+
+section {
+    height: 70%;
+}
+
+footer {
+    height: 10%;
+    background-color: #c8c8c8;
+}
+
+/*Header*/
+
+/*Upper*/
+
+div.head-upper, head-lower {
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.head-upper {
+    height: 40%;
+}
+
+div.head-lower {
+    height: 60%;
+}
+
+img.logo {
+    height: 100%;
+    margin-left: 10%;
+}
+
+.dropdown {
+    height: 80%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    margin-top: 10%;
+    border-radius: 10%;
+    background-color: #FF6B01;
+    color:  #c8c8c8;
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color:  #c8c8c8;
+    min-width: 300px;
+    box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #353535;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 16) + 16px);
+    padding: 16px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FF6B01;
+}
+
+/*Lower*/
+
+div.head-lower {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+}
+
+a.type {
+    padding-top: 2.5%;
+    height: 50%;
+    text-align: center;
+}
+
+div.def {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 24) + 32px);
+    text-align: center;
+    color: #353535;
+}
+
+div.reg, .log {
+    width: 100%;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 24) + 32px);
+}
+
+div.reg {
+    display: table;
+    text-align: right;
+    color: #FF6B01;
+}
+
+div.log {
+    text-align: left;
+    color: #353535;
+}
+
+/*Section*/
+
+form {
+    padding-left: 5%;
+    padding-top: 5%;
+    align-self: center;
+}
+
+input {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 16) + 16px);
+}
+
+button {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 16) + 16px);
+    background-color: #FF6B01;
+    color: #353535;
+    margin-top: 1%;
+}
+
+/*Footer*/
+
+div.footer {
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+span.footer-grey {
+    height: 100%;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (24 - 24) + 24px);
+    background-color: #f1f1f1;
+    color: #353535;
+}
+
+span.footer-orange {
+    height: 100%;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (24 - 24) + 24px);
+    background-color: #f1f1f1;
+    color: #FF6B01;
+}
+
+a {
+    text-decoration: none;
+}
